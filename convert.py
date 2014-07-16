@@ -28,6 +28,7 @@ def convert(inputfile, outputfile):
 				amount = raw_amount
 
 			description = row[7].value
+			description = description.replace('\n', ' ')
 
 			print "Found values", d, amount, description
 
